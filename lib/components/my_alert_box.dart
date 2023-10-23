@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyAlertBox extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   final controller;
   final VoidCallback onSave;
   final VoidCallback onCancel;
