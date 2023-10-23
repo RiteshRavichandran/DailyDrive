@@ -1,4 +1,8 @@
+// ignore: duplicate_ignore
+// ignore: file_names
 // reference our box
+// ignore_for_file: file_names
+
 import 'package:daily_drive/datetime/date_time.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
