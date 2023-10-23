@@ -61,7 +61,7 @@ class _HomePageState  extends State<HomePage> {
     bool allHabitsCompleted = db.todaysHabitList.every((habit) => habit[1] == true);
     if(allHabitsCompleted) {
       _controller.play();
-      confettiTimer = Timer(Duration(seconds: 2), () {
+      confettiTimer = Timer(const Duration(seconds: 2), () {
         _controller.stop();
       });
     }

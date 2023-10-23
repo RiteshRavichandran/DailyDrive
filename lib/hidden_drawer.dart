@@ -31,10 +31,11 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
             selectedStyle: myTextStyle,
             colorLineSelected: Colors.white,
           ),
-          HomePage()),
+          const HomePage()),
     ];
   }
 
+  @override
   Widget build(BuildContext context) {
     return HiddenDrawerMenu(
         screens: _pages,

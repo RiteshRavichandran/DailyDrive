@@ -11,13 +11,13 @@ void main() async {
   // Open a box
   await Hive.openBox("Daily_Drive_Database");
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
 
   @override
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       darkTheme: darkTheme, // Set the dark theme
       themeMode: ThemeMode.system, // Allow the app to follow system settings
 
-      home: HiddenDrawer(),
+      home: const HiddenDrawer(),
       debugShowCheckedModeBanner: false,
     );
   }
